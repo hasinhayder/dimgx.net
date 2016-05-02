@@ -188,7 +188,7 @@ function processData($data){
 
 Github, you ask! Just go to [https://github.com/hasinhayder/dimgx.net](https://github.com/hasinhayder/dimgx.net) and you will find everything together. 
 
-Liked this app, or this article? Don't forget to say hi to [me@hasin.me](me.hasin.me) make my day a little better than yesterday :)
+Liked this app, or this article? Don't forget to say hi to [me@hasin.me](me.hasin.me) and make my day a little better than yesterday :)
 
 Adios.
 
