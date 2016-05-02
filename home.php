@@ -7,7 +7,7 @@ require_once "functions.php";
     <meta charset="UTF-8">
     <title>DimgX/Dummy Image X: Replace attachment urls in your WordPress export file using placeholders</title>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
 <h1>DimgX</h1>
