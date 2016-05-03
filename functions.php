@@ -82,7 +82,9 @@ function is_https_cloudflare() {
 function processData($data){
 	$pattern1 = "/<guid([^>]+)>http:\/\/([^\/]+)\/([\S]+)(\.jpg|png|gif)<\/guid>/";
 	$pattern2 = "/<wp:attachment_url>http:\/\/([^\/]+)\/([\S]+)(\.jpg|png|gif)<\/wp:attachment_url>/";
+	$pattern3 = "/<wp:attachment_url><!\[CDATA\[http:\/\/([^\/]+)\/([\S]+)(\.jpg|png|gif)]]><\/wp:attachment_url>/";
 	$new_data = preg_replace($pattern1,'<guid${1}>http://${2}.dimgx.net/${3}${4}</guid>',$data);
 	$new_data = preg_replace($pattern2,'<wp:attachment_url>http://${1}.dimgx.net/${2}${3}</wp:attachment_url>',$new_data);
+	$new_data = preg_replace($pattern3,'<wp:attachment_url><![CDATA[http://${1}.dimgx.net/${2}${3}]]></wp:attachment_url>',$new_data);
 	return $new_data;
 }
